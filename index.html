@@ -2,14 +2,19 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tarun | Personal Portfolio</title>
 
+
     <style>
 
-        /* ===== BASIC SETTINGS ===== */
+        /* =========================
+           BASIC SETTINGS
+        ========================= */
 
         * {
             margin: 0;
@@ -26,10 +31,13 @@
         }
 
 
-        /* ===== NAVIGATION ===== */
+        /* =========================
+           NAVIGATION BAR
+        ========================= */
 
         nav {
             background-color: #111;
+
             padding: 20px 8%;
 
             display: flex;
@@ -38,22 +46,28 @@
 
             position: sticky;
             top: 0;
+
             z-index: 1000;
         }
 
         nav h2 {
             color: #00ff66;
+            font-size: 25px;
         }
 
         nav ul {
             list-style: none;
+
             display: flex;
             gap: 25px;
         }
 
         nav ul li a {
             color: white;
+
             text-decoration: none;
+
+            font-size: 16px;
         }
 
         nav ul li a:hover {
@@ -61,45 +75,61 @@
         }
 
 
-        /* ===== HOME ===== */
+        /* =========================
+           HOME SECTION
+        ========================= */
 
         .hero {
+
             min-height: 90vh;
 
             display: flex;
+
             justify-content: center;
+
             align-items: center;
 
             text-align: center;
 
             background-color: green;
+
             padding: 30px;
         }
 
         .hero h1 {
+
             font-size: 60px;
+
             margin-bottom: 15px;
         }
 
         .hero h1 span {
+
             color: #111;
         }
 
         .hero p {
+
             font-size: 22px;
+
             margin-bottom: 30px;
         }
 
 
-        /* ===== BUTTONS ===== */
+        /* =========================
+           BUTTONS
+        ========================= */
 
         .btn {
+
             display: inline-block;
 
             padding: 12px 25px;
+
             margin: 5px;
 
             background-color: #111;
+
             color: white;
 
             text-decoration: none;
@@ -107,31 +137,45 @@
             border-radius: 6px;
 
             font-weight: bold;
+
+            transition: 0.3s;
         }
 
         .btn:hover {
+
             background-color: white;
+
             color: green;
         }
 
 
-        /* ===== SECTIONS ===== */
+        /* =========================
+           COMMON SECTIONS
+        ========================= */
 
         section {
+
             padding: 70px 8%;
         }
 
         section h2 {
+
             text-align: center;
+
             font-size: 40px;
+
             margin-bottom: 40px;
         }
 
 
-        /* ===== ABOUT ===== */
+        /* =========================
+           ABOUT SECTION
+        ========================= */
 
         .about {
+
             max-width: 900px;
+
             margin: auto;
 
             text-align: center;
@@ -144,25 +188,31 @@
         }
 
         .about p {
+
             font-size: 18px;
         }
 
 
-        /* ===== SKILLS ===== */
+        /* =========================
+           SKILLS SECTION
+        ========================= */
 
         .skills-container {
+
             max-width: 1000px;
+
             margin: auto;
 
             display: grid;
 
             grid-template-columns:
-                repeat(auto-fit, minmax(180px, 1fr));
+            repeat(auto-fit, minmax(180px, 1fr));
 
             gap: 20px;
         }
 
         .skill {
+
             background-color: #111;
 
             padding: 25px;
@@ -172,52 +222,75 @@
             border-radius: 10px;
 
             font-size: 18px;
+
             font-weight: bold;
-        }
-
-        .skill:hover {
-            background-color: white;
-            color: green;
-
-            transform: translateY(-5px);
 
             transition: 0.3s;
         }
 
+        .skill:hover {
 
-        /* ===== PROJECTS ===== */
+            background-color: white;
+
+            color: green;
+
+            transform: translateY(-5px);
+        }
+
+
+        /* =========================
+           PROJECT SECTION
+        ========================= */
 
         .projects {
+
             display: grid;
 
             grid-template-columns:
-                repeat(auto-fit, minmax(250px, 1fr));
+            repeat(auto-fit, minmax(250px, 1fr));
 
             gap: 25px;
         }
 
         .project {
+
             background-color: #111;
 
             padding: 30px;
 
             border-radius: 10px;
+
+            transition: 0.3s;
+        }
+
+        .project:hover {
+
+            transform: translateY(-5px);
         }
 
         .project h3 {
+
             color: #00ff66;
+
             margin-bottom: 10px;
+
+            font-size: 23px;
         }
 
 
-        /* ===== EDUCATION ===== */
+        /* =========================
+           EDUCATION SECTION
+        ========================= */
 
         .education {
+
             max-width: 800px;
+
             margin: auto;
         }
 
         .education-box {
+
             background-color: #111;
 
             padding: 30px;
@@ -228,47 +301,76 @@
         }
 
         .education-box h3 {
+
             color: #00ff66;
+
             margin-bottom: 10px;
+
+            font-size: 25px;
         }
 
 
-        /* ===== RESUME ===== */
+        /* =========================
+           RESUME SECTION
+        ========================= */
 
         .resume {
+
             text-align: center;
+
             background-color: #111;
         }
 
         .resume h2 {
+
             color: #00ff66;
         }
 
         .resume p {
+
             margin-bottom: 20px;
+
+            font-size: 18px;
         }
 
 
-        /* ===== CONTACT ===== */
+        /* =========================
+           CONTACT SECTION
+        ========================= */
 
         .contact {
+
             text-align: center;
         }
 
         .contact p {
+
             margin: 15px;
+
             font-size: 19px;
         }
 
         .contact a {
+
             color: white;
+
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+
+            color: #00ff66;
         }
 
 
-        /* ===== FOOTER ===== */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
+
             background-color: #111;
+
             color: white;
 
             text-align: center;
@@ -277,27 +379,41 @@
         }
 
 
-        /* ===== MOBILE ===== */
+        /* =========================
+           MOBILE RESPONSIVE
+        ========================= */
 
         @media (max-width: 700px) {
 
             nav {
+
                 flex-direction: column;
+
                 gap: 15px;
             }
 
             nav ul {
+
                 gap: 12px;
+
                 flex-wrap: wrap;
+
                 justify-content: center;
             }
 
             .hero h1 {
+
                 font-size: 40px;
             }
 
             .hero p {
+
                 font-size: 18px;
+            }
+
+            section {
+
+                padding: 50px 5%;
             }
 
         }
@@ -310,7 +426,9 @@
 <body>
 
 
-    <!-- ===== NAVIGATION ===== -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
     <nav>
 
@@ -339,6 +457,10 @@
             </li>
 
             <li>
+                <a href="#resume">Resume</a>
+            </li>
+
+            <li>
                 <a href="#contact">Contact</a>
             </li>
 
@@ -347,7 +469,9 @@
     </nav>
 
 
-    <!-- ===== HOME ===== -->
+    <!-- =========================
+         HOME
+    ========================== -->
 
     <section class="hero" id="home">
 
@@ -361,20 +485,27 @@
                 Student | Developer | Tech Enthusiast
             </p>
 
+
             <a href="#about" class="btn">
-                Explore My Portfolio
+                About Me
             </a>
+
 
             <a href="resume_tarun.pdf"
                target="_blank"
                class="btn">
+
                 View Resume
+
             </a>
+
 
             <a href="resume_tarun.pdf"
                download
                class="btn">
+
                 Download Resume
+
             </a>
 
         </div>
@@ -382,7 +513,9 @@
     </section>
 
 
-    <!-- ===== ABOUT ===== -->
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section id="about">
 
@@ -391,18 +524,25 @@
         <div class="about">
 
             <p>
-                Hello! My name is Tarun. I am a student at
-                Sai University. I am interested in programming,
-                technology, software development and learning
-                new technical skills.
+
+                Hello! My name is Tarun.
+
+                I am a student at Sai University.
+
+                I am interested in programming,
+                technology, software development
+                and learning new technical skills.
+
             </p>
 
             <br>
 
             <p>
-                I enjoy building projects, improving my
-                problem-solving abilities and exploring
-                new technologies.
+
+                I enjoy building projects,
+                improving my problem-solving skills
+                and exploring new technologies.
+
             </p>
 
         </div>
@@ -410,11 +550,14 @@
     </section>
 
 
-    <!-- ===== SKILLS ===== -->
+    <!-- =========================
+         SKILLS
+    ========================== -->
 
     <section id="skills">
 
         <h2>My Skills</h2>
+
 
         <div class="skills-container">
 
@@ -455,22 +598,31 @@
     </section>
 
 
-    <!-- ===== PROJECTS ===== -->
+    <!-- =========================
+         PROJECTS
+    ========================== -->
 
     <section id="projects">
 
         <h2>My Projects</h2>
 
+
         <div class="projects">
 
+
             <div class="project">
 
-                <h3>Portfolio Website</h3>
+                <h3>
+                    Personal Portfolio
+                </h3>
 
                 <p>
-                    A personal portfolio website created
-                    using HTML and CSS to showcase my
-                    skills and experience.
+
+                    A personal portfolio website
+                    created using HTML and CSS
+                    to showcase my skills,
+                    education and projects.
+
                 </p>
 
             </div>
@@ -478,11 +630,16 @@
 
             <div class="project">
 
-                <h3>Python Project</h3>
+                <h3>
+                    Python Project
+                </h3>
 
                 <p>
-                    A Python project demonstrating
-                    programming and problem-solving skills.
+
+                    A Python-based project
+                    demonstrating programming
+                    and problem-solving skills.
+
                 </p>
 
             </div>
@@ -490,25 +647,34 @@
 
             <div class="project">
 
-                <h3>Data Analysis Project</h3>
+                <h3>
+                    Data Analysis
+                </h3>
 
                 <p>
-                    A data analysis project using Python,
-                    Pandas and data visualization tools.
+
+                    A data analysis project using
+                    Python, Pandas and
+                    visualization tools.
+
                 </p>
 
             </div>
+
 
         </div>
 
     </section>
 
 
-    <!-- ===== EDUCATION ===== -->
+    <!-- =========================
+         EDUCATION
+    ========================== -->
 
     <section id="education">
 
         <h2>Education</h2>
+
 
         <div class="education">
 
@@ -522,6 +688,10 @@
                     University Student
                 </p>
 
+                <p>
+                    Chennai, Tamil Nadu
+                </p>
+
             </div>
 
         </div>
@@ -529,60 +699,90 @@
     </section>
 
 
-    <!-- ===== RESUME ===== -->
+    <!-- =========================
+         RESUME
+    ========================== -->
 
-    <section class="resume">
+    <section class="resume" id="resume">
 
-        <h2>My Resume</h2>
+        <h2>
+            My Resume
+        </h2>
 
         <p>
             View or download my complete resume.
         </p>
 
-        <a href="resume.pdf"
+
+        <a href="resume_tarun.pdf"
            target="_blank"
            class="btn">
+
             View Resume
+
         </a>
 
-        <a href="resume.pdf"
+
+        <a href="resume_tarun.pdf"
            download
            class="btn">
+
             Download Resume
+
         </a>
 
     </section>
 
 
-    <!-- ===== CONTACT ===== -->
+    <!-- =========================
+         CONTACT
+    ========================== -->
 
     <section id="contact" class="contact">
 
-        <h2>Contact Me</h2>
+        <h2>
+            Contact Me
+        </h2>
+
 
         <p>
+
             📱 Phone:
+
             <a href="tel:8106703481">
                 8106703481
             </a>
+
         </p>
 
+
         <p>
+
             📧 Email:
+
             <a href="mailto:btarun20082111@gmail.com">
+
                 btarun20082111@gmail.com
+
             </a>
+
         </p>
 
+
         <p>
+
             🎓 University:
+
             Sai University
+
         </p>
 
     </section>
 
 
-    <!-- ===== FOOTER ===== -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer>
 
