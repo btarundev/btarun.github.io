@@ -9,9 +9,7 @@
 
     <style>
 
-        /* ------------------------------
-           GENERAL
-        ------------------------------ */
+        /* ===== BASIC SETTINGS ===== */
 
         * {
             margin: 0;
@@ -22,15 +20,13 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: red;
+            background-color: green;
             color: white;
             line-height: 1.6;
         }
 
 
-        /* ------------------------------
-           NAVIGATION
-        ------------------------------ */
+        /* ===== NAVIGATION ===== */
 
         nav {
             background-color: #111;
@@ -46,13 +42,11 @@
         }
 
         nav h2 {
-            color: red;
-            font-size: 25px;
+            color: #00ff66;
         }
 
         nav ul {
             list-style: none;
-
             display: flex;
             gap: 25px;
         }
@@ -60,17 +54,14 @@
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 16px;
         }
 
         nav ul li a:hover {
-            color: red;
+            color: #00ff66;
         }
 
 
-        /* ------------------------------
-           HOME
-        ------------------------------ */
+        /* ===== HOME ===== */
 
         .hero {
             min-height: 90vh;
@@ -81,7 +72,7 @@
 
             text-align: center;
 
-            background-color: red;
+            background-color: green;
             padding: 30px;
         }
 
@@ -100,9 +91,7 @@
         }
 
 
-        /* ------------------------------
-           BUTTON
-        ------------------------------ */
+        /* ===== BUTTONS ===== */
 
         .btn {
             display: inline-block;
@@ -122,13 +111,11 @@
 
         .btn:hover {
             background-color: white;
-            color: red;
+            color: green;
         }
 
 
-        /* ------------------------------
-           SECTIONS
-        ------------------------------ */
+        /* ===== SECTIONS ===== */
 
         section {
             padding: 70px 8%;
@@ -138,13 +125,10 @@
             text-align: center;
             font-size: 40px;
             margin-bottom: 40px;
-            color: white;
         }
 
 
-        /* ------------------------------
-           ABOUT
-        ------------------------------ */
+        /* ===== ABOUT ===== */
 
         .about {
             max-width: 900px;
@@ -164,9 +148,7 @@
         }
 
 
-        /* ------------------------------
-           SKILLS
-        ------------------------------ */
+        /* ===== SKILLS ===== */
 
         .skills-container {
             max-width: 1000px;
@@ -195,7 +177,7 @@
 
         .skill:hover {
             background-color: white;
-            color: red;
+            color: green;
 
             transform: translateY(-5px);
 
@@ -203,9 +185,7 @@
         }
 
 
-        /* ------------------------------
-           PROJECTS
-        ------------------------------ */
+        /* ===== PROJECTS ===== */
 
         .projects {
             display: grid;
@@ -225,15 +205,12 @@
         }
 
         .project h3 {
-            color: red;
+            color: #00ff66;
             margin-bottom: 10px;
-            font-size: 23px;
         }
 
 
-        /* ------------------------------
-           EDUCATION
-        ------------------------------ */
+        /* ===== EDUCATION ===== */
 
         .education {
             max-width: 800px;
@@ -245,31 +222,26 @@
 
             padding: 30px;
 
-            margin-bottom: 20px;
-
-            border-left: 5px solid white;
+            border-left: 5px solid #00ff66;
 
             border-radius: 5px;
         }
 
         .education-box h3 {
-            color: red;
+            color: #00ff66;
             margin-bottom: 10px;
         }
 
 
-        /* ------------------------------
-           RESUME
-        ------------------------------ */
+        /* ===== RESUME ===== */
 
         .resume {
             text-align: center;
-
             background-color: #111;
         }
 
         .resume h2 {
-            color: red;
+            color: #00ff66;
         }
 
         .resume p {
@@ -277,9 +249,7 @@
         }
 
 
-        /* ------------------------------
-           CONTACT
-        ------------------------------ */
+        /* ===== CONTACT ===== */
 
         .contact {
             text-align: center;
@@ -287,7 +257,6 @@
 
         .contact p {
             margin: 15px;
-
             font-size: 19px;
         }
 
@@ -296,13 +265,10 @@
         }
 
 
-        /* ------------------------------
-           FOOTER
-        ------------------------------ */
+        /* ===== FOOTER ===== */
 
         footer {
             background-color: #111;
-
             color: white;
 
             text-align: center;
@@ -311,9 +277,7 @@
         }
 
 
-        /* ------------------------------
-           MOBILE
-        ------------------------------ */
+        /* ===== MOBILE ===== */
 
         @media (max-width: 700px) {
 
@@ -346,7 +310,7 @@
 <body>
 
 
-    <!-- NAVIGATION -->
+    <!-- ===== NAVIGATION ===== -->
 
     <nav>
 
@@ -383,8 +347,7 @@
     </nav>
 
 
-
-    <!-- HOME -->
+    <!-- ===== HOME ===== -->
 
     <section class="hero" id="home">
 
@@ -419,8 +382,7 @@
     </section>
 
 
-
-    <!-- ABOUT -->
+    <!-- ===== ABOUT ===== -->
 
     <section id="about">
 
@@ -430,17 +392,17 @@
 
             <p>
                 Hello! My name is Tarun. I am a student at
-                Sai University, Chennai. I am interested in
-                programming, technology, software development
-                and learning new technical skills.
+                Sai University. I am interested in programming,
+                technology, software development and learning
+                new technical skills.
             </p>
 
             <br>
 
             <p>
-                I enjoy working on projects, improving my
-                problem-solving skills and exploring new
-                technologies.
+                I enjoy building projects, improving my
+                problem-solving abilities and exploring
+                new technologies.
             </p>
 
         </div>
@@ -448,8 +410,7 @@
     </section>
 
 
-
-    <!-- SKILLS -->
+    <!-- ===== SKILLS ===== -->
 
     <section id="skills">
 
@@ -494,15 +455,13 @@
     </section>
 
 
-
-    <!-- PROJECTS -->
+    <!-- ===== PROJECTS ===== -->
 
     <section id="projects">
 
         <h2>My Projects</h2>
 
         <div class="projects">
-
 
             <div class="project">
 
@@ -511,7 +470,7 @@
                 <p>
                     A personal portfolio website created
                     using HTML and CSS to showcase my
-                    skills, education and projects.
+                    skills and experience.
                 </p>
 
             </div>
@@ -522,7 +481,7 @@
                 <h3>Python Project</h3>
 
                 <p>
-                    A Python-based project demonstrating
+                    A Python project demonstrating
                     programming and problem-solving skills.
                 </p>
 
@@ -535,19 +494,17 @@
 
                 <p>
                     A data analysis project using Python,
-                    Pandas and visualization tools.
+                    Pandas and data visualization tools.
                 </p>
 
             </div>
-
 
         </div>
 
     </section>
 
 
-
-    <!-- EDUCATION -->
+    <!-- ===== EDUCATION ===== -->
 
     <section id="education">
 
@@ -558,27 +515,21 @@
             <div class="education-box">
 
                 <h3>
-                    Sai University, Chennai
+                    Sai University
                 </h3>
 
                 <p>
-                    Undergraduate Student
-                </p>
-
-                <p>
-                    Chennai, Tamil Nadu
+                    University Student
                 </p>
 
             </div>
-
 
         </div>
 
     </section>
 
 
-
-    <!-- RESUME -->
+    <!-- ===== RESUME ===== -->
 
     <section class="resume">
 
@@ -603,8 +554,7 @@
     </section>
 
 
-
-    <!-- CONTACT -->
+    <!-- ===== CONTACT ===== -->
 
     <section id="contact" class="contact">
 
@@ -619,21 +569,20 @@
 
         <p>
             📧 Email:
-            <a href="mailto:your@email.com">
-                your@email.com
+            <a href="mailto:btarun20082111@gmail.com">
+                btarun20082111@gmail.com
             </a>
         </p>
 
         <p>
             🎓 University:
-            Sai University, Chennai
+            Sai University
         </p>
 
     </section>
 
 
-
-    <!-- FOOTER -->
+    <!-- ===== FOOTER ===== -->
 
     <footer>
 
